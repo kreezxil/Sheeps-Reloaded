@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sheepsreloaded",
+  "name": "Sheeps Reloaded",
+  "description": "Adventurous sheep returning with ore!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://minecraft.curseforge.com/projects/sheeps-reloaded",
+  "updateUrl": "",
+  "authorList": ["Kreezxil"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

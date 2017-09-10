@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "sheeeps:blocks/separator_top",
+        "front": "sheeeps:blocks/separator_front_on",
+        "side": "sheeeps:blocks/separator_side"
+    }
+}

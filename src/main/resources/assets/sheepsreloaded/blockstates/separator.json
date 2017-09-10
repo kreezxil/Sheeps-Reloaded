@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "sheeeps:separator" },
+        "facing=south": { "model": "sheeeps:separator", "y": 180 },
+        "facing=west":  { "model": "sheeeps:separator", "y": 270 },
+        "facing=east":  { "model": "sheeeps:separator", "y": 90 }
+    }
+}

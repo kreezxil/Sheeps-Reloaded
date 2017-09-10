@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "level=0": { "model": "sheeeps:washer_empty" },
+        "level=1": { "model": "sheeeps:washer_level1" },
+        "level=2": { "model": "sheeeps:washer_level2" },
+        "level=3": { "model": "sheeeps:washer_level3" }
+    }
+}
