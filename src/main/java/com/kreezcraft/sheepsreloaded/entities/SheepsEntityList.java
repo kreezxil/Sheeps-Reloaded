@@ -18,7 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class SheeepsEntityList
+public class SheepsEntityList
 {
     private static final Logger logger = LogManager.getLogger();
     public static final Map< String, Class <? extends Entity>> stringToClassMapping = Maps. < String, Class <? extends Entity >> newHashMap();
@@ -26,7 +26,7 @@ public class SheeepsEntityList
     public static final Map < Integer, Class <? extends Entity >> idToClassMapping = Maps. < Integer, Class <? extends Entity >> newHashMap();
     private static final Map < Class <? extends Entity > , Integer > classToIDMapping = Maps. < Class <? extends Entity > , Integer > newHashMap();
     private static final Map<String, Integer> stringToIDMapping = Maps.<String, Integer>newHashMap();
-    public static final Map<Integer, SheeepsEntityList.EntityEggInfo> entityEggs = Maps.<Integer, SheeepsEntityList.EntityEggInfo>newLinkedHashMap();
+    public static final Map<Integer, SheepsEntityList.EntityEggInfo> entityEggs = Maps.<Integer, SheepsEntityList.EntityEggInfo>newLinkedHashMap();
 
     /**
      * adds a mapping between Entity classes and both a string representation and an ID

@@ -25,7 +25,7 @@ import java.util.Arrays;
 /**
  * Created by Dan on 3/2/2016.
  */
-public class TileEntitySeparator extends SheeepsTileEntityBase implements ITickable, ISidedInventory {
+public class TileEntitySeparator extends SheepsTileEntityBase implements ITickable, ISidedInventory {
 
     private int burnTimeRemaining = 0;
     private int burnTimeInitialValue = 0;

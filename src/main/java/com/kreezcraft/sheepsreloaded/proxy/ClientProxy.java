@@ -3,8 +3,8 @@ package com.kreezcraft.sheepsreloaded.proxy;
 import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
 import com.kreezcraft.sheepsreloaded.entities.models.ModelOreSheep;
 import com.kreezcraft.sheepsreloaded.entities.renderers.RenderOreSheep;
-import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
-import com.kreezcraft.sheepsreloaded.init.SheeepsItems;
+import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheepsItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -30,8 +30,8 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void postInit() {
         super.postInit();
-        SheeepsBlocks.modRegisterRenders();
-        SheeepsItems.modRegisterRenders();
+        SheepsBlocks.modRegisterRenders();
+        SheepsItems.modRegisterRenders();
     }
 
     @Override
@@ -41,7 +41,7 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void registerRenders(){
-        SheeepsItems.registerRenders();
-        SheeepsBlocks.registerRenders();
+        SheepsItems.registerRenders();
+        SheepsBlocks.registerRenders();
     }
 }

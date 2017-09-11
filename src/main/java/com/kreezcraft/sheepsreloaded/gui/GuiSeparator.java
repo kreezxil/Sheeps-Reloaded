@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Dan on 3/3/2016.
  */
-public class GuiSeparator extends SheeepsGuiBase {
+public class GuiSeparator extends SheepsGuiBase {
     private final TileEntitySeparator te;
     private final ResourceLocation guiTexture;
 

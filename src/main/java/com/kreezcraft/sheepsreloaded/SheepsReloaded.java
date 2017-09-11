@@ -30,30 +30,34 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION)
 public class SheepsReloaded {
+	
+	int modEntityID = 0;
+	
     @Instance
     public static SheepsReloaded instance = new SheepsReloaded();
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
-    public static final SheeepsTab tabSheeeps = new SheeepsTab("tabSheeeps");
+    public static final SheepsTab tabSheeps = new SheepsTab("tabSheeps");
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e){
 
         ConfigurationHandler.init(e.getSuggestedConfigurationFile());
 
-        SheeepsBlocks.init();
-        SheeepsBlocks.register();
+        SheepsBlocks.init();
+        SheepsBlocks.register();
 
-        SheeepsItems.init();
-        SheeepsItems.register();
+        SheepsItems.init();
+        SheepsItems.register();
 
-        SheeepsTileEntities.init();
+        SheepsTileEntities.init();
 
-        int modEntityID = 0;
-        EntityRegistry.registerModEntity(registryName, entityClass, entityName, id, mod, trackingRange, updateFrequency, sendsVelocityUpdates, eggPrimary, eggSecondary);
-        EntityRegistry.registerModEntity(new ResourceLocation(null), EntityOreSheep.class, "OreSheeep", ++modEntityID , SheepsReloaded.instance, 80, 3, false);
+        //int modEntityID = 0; //wtf? moved it out of the function and into the class body
+        ++modEntityID;
+    //  EntityRegistry.registerModEntity(registryName             , entityClass         , entityName, id          , mod                    , trackingRange, updateFrequency, sendsVelocityUpdates);
+        EntityRegistry.registerModEntity(new ResourceLocation("OreSheep" + modEntityID) , EntityOreSheep.class, "OreSheep", modEntityID , SheepsReloaded.instance, 80           , 3              , false);
 
         proxy.preInit();
 
@@ -68,7 +72,7 @@ public class SheepsReloaded {
 
         proxy.init();
 
-        SheeepsRecipes.register();
+        SheepsRecipes.register();
         addWorldGen();
 
         proxy.registerRenders();

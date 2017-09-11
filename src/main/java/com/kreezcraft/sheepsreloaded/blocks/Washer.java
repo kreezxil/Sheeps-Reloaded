@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.blocks;
 
-import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
 import com.kreezcraft.sheepsreloaded.items.fleece.BaseOreFleece;
 import com.kreezcraft.sheepsreloaded.items.WasherRegistry;
 import net.minecraft.block.Block;
@@ -172,13 +172,13 @@ public class Washer extends Block /*extends BlockContainer*/ {
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(SheeepsBlocks.washer);
+        return Item.getItemFromBlock(SheepsBlocks.washer);
     }
 
     @SideOnly(Side.CLIENT)
     public Item getItem(World worldIn, BlockPos pos)
     {
-        return Item.getItemFromBlock(SheeepsBlocks.washer);
+        return Item.getItemFromBlock(SheepsBlocks.washer);
     }
 
     /**

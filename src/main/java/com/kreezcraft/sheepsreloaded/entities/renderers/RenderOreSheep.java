@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
  */
 public class RenderOreSheep extends RenderLiving<EntityOreSheep> {
 
-    //private static final ResourceLocation shearedSheepTextures = new ResourceLocation("sheeeps:textures/entity/iron_ore_sheep_sheared.png");
+    //private static final ResourceLocation shearedSheepTextures = new ResourceLocation("sheeps:textures/entity/iron_ore_sheep_sheared.png");
 
     public RenderOreSheep(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
         super(renderManagerIn, modelBaseIn, shadowSizeIn);

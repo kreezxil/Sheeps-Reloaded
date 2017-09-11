@@ -1,8 +1,8 @@
 package com.kreezcraft.sheepsreloaded.items;
 
 import com.google.common.collect.Maps;
-import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
-import com.kreezcraft.sheepsreloaded.init.SheeepsItems;
+import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheepsItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -24,40 +24,40 @@ public class WasherRegistry {
 
     public WasherRegistry(){
         /* Vanilla Ores */
-        this.addWasherRecipeForItem(SheeepsItems.coal_fleece, new ItemStack(SheeepsBlocks.coal_wool));
-        this.addWasherRecipeForItem(SheeepsItems.iron_fleece, new ItemStack(SheeepsBlocks.iron_wool));
-        this.addWasherRecipeForItem(SheeepsItems.diamond_fleece, new ItemStack(SheeepsBlocks.diamond_wool));
-        this.addWasherRecipeForItem(SheeepsItems.emerald_fleece, new ItemStack(SheeepsBlocks.emerald_wool));
-        this.addWasherRecipeForItem(SheeepsItems.gold_fleece, new ItemStack(SheeepsBlocks.gold_wool));
-        this.addWasherRecipeForItem(SheeepsItems.glowstone_fleece, new ItemStack(SheeepsBlocks.glowstone_wool));
-        this.addWasherRecipeForItem(SheeepsItems.redstone_fleece, new ItemStack(SheeepsBlocks.redstone_wool));
-        this.addWasherRecipeForItem(SheeepsItems.lapis_fleece, new ItemStack(SheeepsBlocks.lapis_wool));
+        this.addWasherRecipeForItem(SheepsItems.coal_fleece, new ItemStack(SheepsBlocks.coal_wool));
+        this.addWasherRecipeForItem(SheepsItems.iron_fleece, new ItemStack(SheepsBlocks.iron_wool));
+        this.addWasherRecipeForItem(SheepsItems.diamond_fleece, new ItemStack(SheepsBlocks.diamond_wool));
+        this.addWasherRecipeForItem(SheepsItems.emerald_fleece, new ItemStack(SheepsBlocks.emerald_wool));
+        this.addWasherRecipeForItem(SheepsItems.gold_fleece, new ItemStack(SheepsBlocks.gold_wool));
+        this.addWasherRecipeForItem(SheepsItems.glowstone_fleece, new ItemStack(SheepsBlocks.glowstone_wool));
+        this.addWasherRecipeForItem(SheepsItems.redstone_fleece, new ItemStack(SheepsBlocks.redstone_wool));
+        this.addWasherRecipeForItem(SheepsItems.lapis_fleece, new ItemStack(SheepsBlocks.lapis_wool));
     }
 
     public void addModWasherRecipes(){
         if(OreDictionary.getOres("ingotCopper").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.copper_fleece, new ItemStack(SheeepsBlocks.copper_wool));
+            this.addWasherRecipeForItem(SheepsItems.copper_fleece, new ItemStack(SheepsBlocks.copper_wool));
         }
         if(OreDictionary.getOres("ingotTin").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.tin_fleece, new ItemStack(SheeepsBlocks.tin_wool));
+            this.addWasherRecipeForItem(SheepsItems.tin_fleece, new ItemStack(SheepsBlocks.tin_wool));
         }
         if(OreDictionary.getOres("ingotNickel").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.nickel_fleece, new ItemStack(SheeepsBlocks.nickel_wool));
+            this.addWasherRecipeForItem(SheepsItems.nickel_fleece, new ItemStack(SheepsBlocks.nickel_wool));
         }
         if(OreDictionary.getOres("ingotLead").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.lead_fleece, new ItemStack(SheeepsBlocks.lead_wool));
+            this.addWasherRecipeForItem(SheepsItems.lead_fleece, new ItemStack(SheepsBlocks.lead_wool));
         }
         if(OreDictionary.getOres("ingotSilver").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.silver_fleece, new ItemStack(SheeepsBlocks.silver_wool));
+            this.addWasherRecipeForItem(SheepsItems.silver_fleece, new ItemStack(SheepsBlocks.silver_wool));
         }
         if(OreDictionary.getOres("ingotPlatinum").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.platinum_fleece, new ItemStack(SheeepsBlocks.platinum_wool));
+            this.addWasherRecipeForItem(SheepsItems.platinum_fleece, new ItemStack(SheepsBlocks.platinum_wool));
         }
         if(OreDictionary.getOres("ingotArdite").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.ardite_fleece, new ItemStack(SheeepsBlocks.ardite_wool));
+            this.addWasherRecipeForItem(SheepsItems.ardite_fleece, new ItemStack(SheepsBlocks.ardite_wool));
         }
         if(OreDictionary.getOres("ingotCobalt").size() > 0) {
-            this.addWasherRecipeForItem(SheeepsItems.cobalt_fleece, new ItemStack(SheeepsBlocks.cobalt_wool));
+            this.addWasherRecipeForItem(SheepsItems.cobalt_fleece, new ItemStack(SheepsBlocks.cobalt_wool));
         }
     }
     /**

@@ -20,9 +20,9 @@ public class CobaltSpawnEgg extends BaseOreSpawnEgg {
     public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if(!worldIn.isRemote) {
-            EntityOreSheep entityToSpawn = (EntityOreSheep) EntityList.createEntityByName("sheeeps.OreSheeep", worldIn);
+            EntityOreSheep entityToSpawn = (EntityOreSheep) EntityList.createEntityByName("sheeps.OreSheep", worldIn);
             entityToSpawn.setPosition(pos.getX(), pos.getY() + 1, pos.getZ());
-            entityToSpawn.setSheeepType(15);
+            entityToSpawn.setSheepType(15);
             worldIn.spawnEntityInWorld(entityToSpawn);
             return true;
         }

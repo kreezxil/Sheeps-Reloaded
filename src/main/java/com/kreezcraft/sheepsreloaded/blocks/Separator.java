@@ -1,8 +1,8 @@
 package com.kreezcraft.sheepsreloaded.blocks;
 
-import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Sheeps;
 import com.kreezcraft.sheepsreloaded.gui.GuiHandler;
-import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
 import com.kreezcraft.sheepsreloaded.tileentities.TileEntitySeparator;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
@@ -46,7 +46,7 @@ public class Separator extends Block implements ITileEntityProvider {
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return Item.getItemFromBlock(SheeepsBlocks.separator);
+        return Item.getItemFromBlock(SheepsBlocks.separator);
     }
 
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
@@ -94,18 +94,18 @@ public class Separator extends Block implements ITileEntityProvider {
 
             switch (blockState) {
                 case 0: // Off
-                    worldIn.setBlockState(pos, SheeepsBlocks.separator.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+                    worldIn.setBlockState(pos, SheepsBlocks.separator.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
                     break;
                 case 1: // On 1
-                    worldIn.setBlockState(pos, SheeepsBlocks.separator_on_1.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+                    worldIn.setBlockState(pos, SheepsBlocks.separator_on_1.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
                     break;
                 case 2: // On 2
-                    worldIn.setBlockState(pos, SheeepsBlocks.separator_on_2.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+                    worldIn.setBlockState(pos, SheepsBlocks.separator_on_2.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
                     break;
             }
         } else {
             if(blockState != 0){
-                worldIn.setBlockState(pos, SheeepsBlocks.separator.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
+                worldIn.setBlockState(pos, SheepsBlocks.separator.getDefaultState().withProperty(FACING, iblockstate.getValue(FACING)), 3);
             }
         }
 
@@ -140,7 +140,7 @@ public class Separator extends Block implements ITileEntityProvider {
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ) {
         if(!world.isRemote){
-            player.openGui(Sheeeps.instance, GuiHandler.GuiIDs.SEPARATOR.ordinal(), world, pos.getX(), pos.getY(), pos.getZ());
+            player.openGui(Sheeps.instance, GuiHandler.GuiIDs.SEPARATOR.ordinal(), world, pos.getX(), pos.getY(), pos.getZ());
         }
 
         return true;
@@ -176,7 +176,7 @@ public class Separator extends Block implements ITileEntityProvider {
     @SideOnly(Side.CLIENT)
     public Item getItem(World worldIn, BlockPos pos)
     {
-        return Item.getItemFromBlock(SheeepsBlocks.separator);
+        return Item.getItemFromBlock(SheepsBlocks.separator);
     }
 
     /**

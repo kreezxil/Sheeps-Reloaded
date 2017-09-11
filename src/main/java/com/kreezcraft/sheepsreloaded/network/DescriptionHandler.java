@@ -1,8 +1,8 @@
 package com.kreezcraft.sheepsreloaded.network;
 
 import com.kreezcraft.sheepsreloaded.Reference;
-import com.kreezcraft.sheepsreloaded.Sheeeps;
-import com.kreezcraft.sheepsreloaded.tileentities.SheeepsTileEntityBase;
+import com.kreezcraft.sheepsreloaded.Sheeps;
+import com.kreezcraft.sheepsreloaded.tileentities.SheepsTileEntityBase;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -31,9 +31,9 @@ public class DescriptionHandler extends SimpleChannelInboundHandler<FMLProxyPack
         int x = buf.readInt();
         int y = buf.readInt();
         int z = buf.readInt();
-        TileEntity te = Sheeeps.proxy.getClientPlayer().worldObj.getTileEntity(new BlockPos(x, y, z));
-        if(te instanceof SheeepsTileEntityBase){
-            ((SheeepsTileEntityBase)te).readFromPacket(buf);
+        TileEntity te = Sheeps.proxy.getClientPlayer().worldObj.getTileEntity(new BlockPos(x, y, z));
+        if(te instanceof SheepsTileEntityBase){
+            ((SheepsTileEntityBase)te).readFromPacket(buf);
         }
     }
 }

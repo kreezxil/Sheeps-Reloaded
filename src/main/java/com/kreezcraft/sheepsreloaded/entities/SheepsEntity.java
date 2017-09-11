@@ -7,7 +7,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 /**
  * Created by Dan on 2/28/2016.
  */
-public class SheeepsEntity {
+public class SheepsEntity {
     private final int id;
     private final String entityName;
     private ItemStack dropItem;
@@ -19,7 +19,7 @@ public class SheeepsEntity {
     private BiomeGenBase[] spawnBiomes;
     private BiomeGenBase[] excludedBiomes;
 
-    public SheeepsEntity(int id, String entityName, ItemStack dropItem, ResourceLocation shearedTexture, ResourceLocation furTexture, int maxSpawnHeight, int minSpawnHeight, float rarity, BiomeGenBase[] spawnBiomes, BiomeGenBase[] excludedBiomes){
+    public SheepsEntity(int id, String entityName, ItemStack dropItem, ResourceLocation shearedTexture, ResourceLocation furTexture, int maxSpawnHeight, int minSpawnHeight, float rarity, BiomeGenBase[] spawnBiomes, BiomeGenBase[] excludedBiomes){
         this.id = id;
         this.entityName = entityName;
         this.dropItem = dropItem;

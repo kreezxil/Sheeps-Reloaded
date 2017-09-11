@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  * Created by Dan on 3/3/2016.
  */
-public class ContainerSeparator extends SheeepsContainerBase {
+public class ContainerSeparator extends SheepsContainerBase {
     private final TileEntitySeparator te;
     private int [] cachedFields;
     public ContainerSeparator(InventoryPlayer playerInventory, TileEntitySeparator te){

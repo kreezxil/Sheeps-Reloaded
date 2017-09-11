@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.init;
 
-import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Sheeps;
 import com.kreezcraft.sheepsreloaded.Reference;
 import com.kreezcraft.sheepsreloaded.blocks.*;
 import net.minecraft.block.Block;
@@ -14,7 +14,7 @@ import net.minecraftforge.oredict.OreDictionary;
 /**
  * Created by Dan on 2/25/2016.
  */
-public class SheeepsBlocks {
+public class SheepsBlocks {
     // Vanilla Ores
     public static Block iron_wool;
     public static Block diamond_wool;
@@ -42,27 +42,27 @@ public class SheeepsBlocks {
 
     public static void init(){
         // Vanilla Ores
-        iron_wool = new IronWool(Material.cloth).setUnlocalizedName("iron_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        diamond_wool = new DiamondWool(Material.cloth).setUnlocalizedName("diamond_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        coal_wool = new CoalWool(Material.cloth).setUnlocalizedName("coal_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        emerald_wool = new EmeraldWool(Material.cloth).setUnlocalizedName("emerald_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        gold_wool = new GoldWool(Material.cloth).setUnlocalizedName("gold_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        glowstone_wool = new GlowstoneWool(Material.cloth).setUnlocalizedName("glowstone_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        redstone_wool = new RedstoneWool(Material.cloth).setUnlocalizedName("redstone_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        lapis_wool = new LapisWool(Material.cloth).setUnlocalizedName("lapis_wool").setCreativeTab(Sheeeps.tabSheeeps);
+        iron_wool = new IronWool(Material.cloth).setUnlocalizedName("iron_wool").setCreativeTab(Sheeps.tabSheeps);
+        diamond_wool = new DiamondWool(Material.cloth).setUnlocalizedName("diamond_wool").setCreativeTab(Sheeps.tabSheeps);
+        coal_wool = new CoalWool(Material.cloth).setUnlocalizedName("coal_wool").setCreativeTab(Sheeps.tabSheeps);
+        emerald_wool = new EmeraldWool(Material.cloth).setUnlocalizedName("emerald_wool").setCreativeTab(Sheeps.tabSheeps);
+        gold_wool = new GoldWool(Material.cloth).setUnlocalizedName("gold_wool").setCreativeTab(Sheeps.tabSheeps);
+        glowstone_wool = new GlowstoneWool(Material.cloth).setUnlocalizedName("glowstone_wool").setCreativeTab(Sheeps.tabSheeps);
+        redstone_wool = new RedstoneWool(Material.cloth).setUnlocalizedName("redstone_wool").setCreativeTab(Sheeps.tabSheeps);
+        lapis_wool = new LapisWool(Material.cloth).setUnlocalizedName("lapis_wool").setCreativeTab(Sheeps.tabSheeps);
 
         // Mod Ores
-        copper_wool = new CopperWool(Material.cloth).setUnlocalizedName("copper_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        tin_wool = new TinWool(Material.cloth).setUnlocalizedName("tin_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        nickel_wool = new NickelWool(Material.cloth).setUnlocalizedName("nickel_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        lead_wool = new LeadWool(Material.cloth).setUnlocalizedName("lead_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        silver_wool = new SilverWool(Material.cloth).setUnlocalizedName("silver_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        platinum_wool = new PlatinumWool(Material.cloth).setUnlocalizedName("platinum_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        ardite_wool = new ArditeWool(Material.cloth).setUnlocalizedName("ardite_wool").setCreativeTab(Sheeeps.tabSheeeps);
-        cobalt_wool = new CobaltWool(Material.cloth).setUnlocalizedName("cobalt_wool").setCreativeTab(Sheeeps.tabSheeeps);
+        copper_wool = new CopperWool(Material.cloth).setUnlocalizedName("copper_wool").setCreativeTab(Sheeps.tabSheeps);
+        tin_wool = new TinWool(Material.cloth).setUnlocalizedName("tin_wool").setCreativeTab(Sheeps.tabSheeps);
+        nickel_wool = new NickelWool(Material.cloth).setUnlocalizedName("nickel_wool").setCreativeTab(Sheeps.tabSheeps);
+        lead_wool = new LeadWool(Material.cloth).setUnlocalizedName("lead_wool").setCreativeTab(Sheeps.tabSheeps);
+        silver_wool = new SilverWool(Material.cloth).setUnlocalizedName("silver_wool").setCreativeTab(Sheeps.tabSheeps);
+        platinum_wool = new PlatinumWool(Material.cloth).setUnlocalizedName("platinum_wool").setCreativeTab(Sheeps.tabSheeps);
+        ardite_wool = new ArditeWool(Material.cloth).setUnlocalizedName("ardite_wool").setCreativeTab(Sheeps.tabSheeps);
+        cobalt_wool = new CobaltWool(Material.cloth).setUnlocalizedName("cobalt_wool").setCreativeTab(Sheeps.tabSheeps);
 
-        washer = new Washer(Material.wood).setUnlocalizedName("washer").setCreativeTab(Sheeeps.tabSheeeps);
-        separator = new Separator().setUnlocalizedName("separator").setCreativeTab(Sheeeps.tabSheeeps);
+        washer = new Washer(Material.wood).setUnlocalizedName("washer").setCreativeTab(Sheeps.tabSheeps);
+        separator = new Separator().setUnlocalizedName("separator").setCreativeTab(Sheeps.tabSheeps);
 
         separator_on_1 = new Separator().setUnlocalizedName("separator_on_1");
         separator_on_2 = new Separator().setUnlocalizedName("separator_on_2");

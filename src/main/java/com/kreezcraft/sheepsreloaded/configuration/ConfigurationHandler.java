@@ -18,12 +18,12 @@ public class ConfigurationHandler {
             configuration.load();
 
             // Read in properties
-            ConfigurationReference.setSheepDensity(configuration.get(Configuration.CATEGORY_GENERAL, "sheepDensity", 20, "Sets the spawn density for Sheeeps").getInt(20));
-            ConfigurationReference.setSheepRarity(configuration.get(Configuration.CATEGORY_GENERAL, "sheepRarity", 5, "Sets the rarity for Sheeeps. High numbers means they will spawn more often").getInt(5));
+            ConfigurationReference.setSheepDensity(configuration.get(Configuration.CATEGORY_GENERAL, "sheepDensity", 20, "Sets the spawn density for Sheeps").getInt(20));
+            ConfigurationReference.setSheepRarity(configuration.get(Configuration.CATEGORY_GENERAL, "sheepRarity", 5, "Sets the rarity for Sheeps. High numbers means they will spawn more often").getInt(5));
 
             // Create new sheep, push to config reference sheep array
 
-            // Vanilla Ore Sheeep
+            // Vanilla Ore Sheep
             configSheep("Coal Sheep", false, 40, 255, 10);
             configSheep("Iron Sheep", false, 40, 80, 8);
             configSheep("Gold Sheep", false, 0, 40, 6);
@@ -33,7 +33,7 @@ public class ConfigurationHandler {
             configSheep("Diamond Sheep", false, 0, 25, 3);
             configSheep("Emerald Sheep", false, 0, 25, 4);
 
-            // Mod Ore Sheeep
+            // Mod Ore Sheep
             configSheep("Copper Sheep", false, 20, 80, 7);
             configSheep("Tin Sheep", false, 20, 60, 7);
             configSheep("Nickel Sheep", false, 0, 40, 5);

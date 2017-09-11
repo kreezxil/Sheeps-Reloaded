@@ -27,14 +27,14 @@ public class EventHandlerCommon {
         Entity dude = e.entity;
 
         if(dude instanceof EntityOreSheep){
-            List<EntityOreSheep> loadedSurfaceSheeeps = e.world.getEntitiesWithinAABB(EntityOreSheep.class, new AxisAlignedBB(e.entity.getPosition().getX() + 128, 64, e.entity.getPosition().getZ() + 128, e.entity.getPosition().getX() - 128, 255, e.entity.getPosition().getZ() - 128));
-            List<EntityOreSheep> loadedCaveSheeeps = e.world.getEntitiesWithinAABB(EntityOreSheep.class, new AxisAlignedBB(e.entity.getPosition().getX() + 128, 0, e.entity.getPosition().getZ() + 128, e.entity.getPosition().getX() - 128, 64, e.entity.getPosition().getZ() - 128));
+            List<EntityOreSheep> loadedSurfaceSheeps = e.world.getEntitiesWithinAABB(EntityOreSheep.class, new AxisAlignedBB(e.entity.getPosition().getX() + 128, 64, e.entity.getPosition().getZ() + 128, e.entity.getPosition().getX() - 128, 255, e.entity.getPosition().getZ() - 128));
+            List<EntityOreSheep> loadedCaveSheeps = e.world.getEntitiesWithinAABB(EntityOreSheep.class, new AxisAlignedBB(e.entity.getPosition().getX() + 128, 0, e.entity.getPosition().getZ() + 128, e.entity.getPosition().getX() - 128, 64, e.entity.getPosition().getZ() - 128));
 
             if(e.entity.getPosition().getY() >= 64) {
-                if (loadedSurfaceSheeeps.size() > ConfigurationReference.getSheepDensity())
+                if (loadedSurfaceSheeps.size() > ConfigurationReference.getSheepDensity())
                     e.setResult(Event.Result.DENY);
             } else {
-                if (loadedCaveSheeeps.size() > ConfigurationReference.getSheepDensity())
+                if (loadedCaveSheeps.size() > ConfigurationReference.getSheepDensity())
                     e.setResult(Event.Result.DENY);
             }
         }

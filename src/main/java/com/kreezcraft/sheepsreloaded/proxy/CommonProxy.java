@@ -1,9 +1,9 @@
 package com.kreezcraft.sheepsreloaded.proxy;
 
-import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
-import com.kreezcraft.sheepsreloaded.init.SheeepsEntities;
-import com.kreezcraft.sheepsreloaded.init.SheeepsItems;
-import com.kreezcraft.sheepsreloaded.init.SheeepsRecipes;
+import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheepsEntities;
+import com.kreezcraft.sheepsreloaded.init.SheepsItems;
+import com.kreezcraft.sheepsreloaded.init.SheepsRecipes;
 import com.kreezcraft.sheepsreloaded.items.SeparatorRegistry;
 import com.kreezcraft.sheepsreloaded.items.WasherRegistry;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +13,7 @@ import net.minecraft.entity.player.EntityPlayer;
  */
 public abstract class CommonProxy{
     public void preInit(){
-        SheeepsEntities.registerSheeep();
+        SheepsEntities.registerSheep();
     }
 
     public void init(){
@@ -21,12 +21,12 @@ public abstract class CommonProxy{
     }
 
     public void postInit(){
-        SheeepsItems.modRegister();
-        SheeepsBlocks.modRegister();
-        SheeepsEntities.registerModSheeep();
+        SheepsItems.modRegister();
+        SheepsBlocks.modRegister();
+        SheepsEntities.registerModSheep();
         WasherRegistry.instance().addModWasherRecipes();
         SeparatorRegistry.instance().addModSeparatorRecipes();
-        SheeepsRecipes.addModFurnaceRecipes();
+        SheepsRecipes.addModFurnaceRecipes();
     }
 
     public abstract EntityPlayer getClientPlayer();

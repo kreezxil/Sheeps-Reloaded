@@ -12,12 +12,12 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Created by Dan on 3/3/2016.
  */
-public class SheeepsGuiBase extends GuiContainer {
+public class SheepsGuiBase extends GuiContainer {
 
     private final ResourceLocation guiTexture;
     private final IInventory inventory;
 
-    public SheeepsGuiBase(Container container, String guiTextureName, IInventory inventory){
+    public SheepsGuiBase(Container container, String guiTextureName, IInventory inventory){
         super(container);
 
         guiTexture = new ResourceLocation(Reference.MODID + ":textures/gui/" + guiTextureName + ".png");

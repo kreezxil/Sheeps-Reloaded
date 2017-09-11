@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.network.internal.FMLProxyPacket;
 /**
  * Created by Dan on 3/2/2016.
  */
-public class SheeepsTileEntityBase extends TileEntity {
+public class SheepsTileEntityBase extends TileEntity {
 
     @Override
     public Packet getDescriptionPacket(){

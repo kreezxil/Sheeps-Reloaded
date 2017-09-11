@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.network;
 
-import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Sheeps;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
@@ -17,7 +17,7 @@ public abstract class MessageBase<REQ extends IMessage> implements IMessage, IMe
         if(ctx.side == Side.SERVER){
             handleServerSide(message, ctx.getServerHandler().playerEntity);
         } else {
-            handleClientSide(message, Sheeeps.proxy.getClientPlayer());
+            handleClientSide(message, Sheeps.proxy.getClientPlayer());
         }
         return null;
     }

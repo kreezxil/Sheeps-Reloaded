@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.entities;
 
-import com.kreezcraft.sheepsreloaded.init.SheeepsEntities;
+import com.kreezcraft.sheepsreloaded.init.SheepsEntities;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.item.EntityItem;
@@ -32,13 +32,13 @@ public class EntityOreSheep extends EntitySheep {
     }
 
     public ResourceLocation getShearedTexture(){
-        SheeepsEntity sheeep = getSheeep();
-        return sheeep.getShearedTexture();
+        SheepsEntity sheep = getSheep();
+        return sheep.getShearedTexture();
     }
 
     public ResourceLocation getFurTexture(){
-        SheeepsEntity sheeep = getSheeep();
-        return sheeep.getFurTexture();
+        SheepsEntity sheep = getSheep();
+        return sheep.getFurTexture();
     }
 
     private static class GroupData implements IEntityLivingData {
@@ -53,15 +53,15 @@ public class EntityOreSheep extends EntitySheep {
         }
     }
 
-    public void setSheeepType(int type){
+    public void setSheepType(int type){
         this.dataWatcher.updateObject(TYPE_ID, type);
     }
 
-    private SheeepsEntity getSheeep(){
-        return SheeepsEntities.getByType(getSheeepType());
+    private SheepsEntity getSheep(){
+        return SheepsEntities.getByType(getSheepType());
     }
 
-    private int getSheeepType() {
+    private int getSheepType() {
         return this.dataWatcher.getWatchableObjectInt(TYPE_ID);
     }
 
@@ -72,7 +72,7 @@ public class EntityOreSheep extends EntitySheep {
     }
 
     /*
-        World Gen Sheeep
+        World Gen Sheep
      */
     @Override
     public boolean getCanSpawnHere() {
@@ -94,21 +94,21 @@ public class EntityOreSheep extends EntitySheep {
 
         if (livingData instanceof GroupData) {
             GroupData groupData = (GroupData) livingData;
-            setSheeepType(groupData.getType());
+            setSheepType(groupData.getType());
         } else {
             BiomeGenBase biome = worldObj.getBiomeGenForCoords(getPosition());
             BlockPos pos = getPosition();
 
-            List<SheeepsEntity> possibleSheeeps = SheeepsEntities.getPossibleSheeeps(biome, pos);
+            List<SheepsEntity> possibleSheeps = SheepsEntities.getPossibleSheeps(biome, pos);
             // Get Random sheep
-            if(possibleSheeeps.size() == 0){
-                possibleSheeeps.add(SheeepsEntities.getByType(2));
+            if(possibleSheeps.size() == 0){
+                possibleSheeps.add(SheepsEntities.getByType(2));
             }
 
-            SheeepsEntity sheeep = possibleSheeeps.get(rand.nextInt(possibleSheeeps.size()));
+            SheepsEntity sheep = possibleSheeps.get(rand.nextInt(possibleSheeps.size()));
 
-            int type = sheeep.getId();
-            setSheeepType(type);
+            int type = sheep.getId();
+            setSheepType(type);
             livingData = new GroupData(type);
         }
 
@@ -122,13 +122,13 @@ public class EntityOreSheep extends EntitySheep {
     @Override
     public void writeToNBT(NBTTagCompound tagCompund) {
         super.writeToNBT(tagCompund);
-        tagCompund.setInteger(TYPE_NBT, getSheeepType());
+        tagCompund.setInteger(TYPE_NBT, getSheepType());
     }
 
     @Override
     public void readFromNBT(NBTTagCompound tagCompund) {
         super.readFromNBT(tagCompund);
-        setSheeepType(tagCompund.getInteger(TYPE_NBT));
+        setSheepType(tagCompund.getInteger(TYPE_NBT));
     }
 
     @Override
@@ -137,9 +137,9 @@ public class EntityOreSheep extends EntitySheep {
             return getCustomNameTag();
         }
 
-        SheeepsEntity sheeep = getSheeep();
-        //return StatCollector.translateToLocal("entity." + sheeep.getEntityName() + ".name");
-        return sheeep.getEntityName();
+        SheepsEntity sheep = getSheep();
+        //return StatCollector.translateToLocal("entity." + sheep.getEntityName() + ".name");
+        return sheep.getEntityName();
     }
 
     /**
@@ -174,14 +174,14 @@ public class EntityOreSheep extends EntitySheep {
 
     @Override
     protected Item getDropItem(){
-        SheeepsEntity sheeep = getSheeep();
-        return sheeep.getDropItem().getItem();
+        SheepsEntity sheep = getSheep();
+        return sheep.getDropItem().getItem();
     }
 
     protected ItemStack getFleeceDropItem()
     {
-        SheeepsEntity sheeep = getSheeep();
-        ItemStack dropItem = sheeep.getDropItem();
+        SheepsEntity sheep = getSheep();
+        ItemStack dropItem = sheep.getDropItem();
         dropItem.stackSize = 1;
         return dropItem;
         //return Item.getItemFromBlock(Blocks.wool);

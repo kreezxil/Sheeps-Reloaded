@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.init;
 
-import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Sheeps;
 import com.kreezcraft.sheepsreloaded.Reference;
 import com.kreezcraft.sheepsreloaded.items.fleece.*;
 import com.kreezcraft.sheepsreloaded.items.residue.*;
@@ -14,7 +14,7 @@ import net.minecraftforge.oredict.OreDictionary;
 /**
  * Created by Dan on 2/25/2016.
  */
-public class SheeepsItems {
+public class SheepsItems {
 
     /* Fleece - Vanilla */
     public static Item iron_fleece;
@@ -78,64 +78,64 @@ public class SheeepsItems {
 
     public static void init(){
         /* Fleece - Vanilla */
-        iron_fleece = new IronFleece().setUnlocalizedName("iron_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        diamond_fleece = new DiamondFleece().setUnlocalizedName("diamond_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        coal_fleece = new CoalFleece().setUnlocalizedName("coal_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        emerald_fleece = new EmeraldFleece().setUnlocalizedName("emerald_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        gold_fleece = new GoldFleece().setUnlocalizedName("gold_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        glowstone_fleece = new GlowstoneFleece().setUnlocalizedName("glowstone_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        redstone_fleece = new RedstoneFleece().setUnlocalizedName("redstone_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        lapis_fleece = new LapisFleece().setUnlocalizedName("lapis_fleece").setCreativeTab(Sheeeps.tabSheeeps);
+        iron_fleece = new IronFleece().setUnlocalizedName("iron_fleece").setCreativeTab(Sheeps.tabSheeps);
+        diamond_fleece = new DiamondFleece().setUnlocalizedName("diamond_fleece").setCreativeTab(Sheeps.tabSheeps);
+        coal_fleece = new CoalFleece().setUnlocalizedName("coal_fleece").setCreativeTab(Sheeps.tabSheeps);
+        emerald_fleece = new EmeraldFleece().setUnlocalizedName("emerald_fleece").setCreativeTab(Sheeps.tabSheeps);
+        gold_fleece = new GoldFleece().setUnlocalizedName("gold_fleece").setCreativeTab(Sheeps.tabSheeps);
+        glowstone_fleece = new GlowstoneFleece().setUnlocalizedName("glowstone_fleece").setCreativeTab(Sheeps.tabSheeps);
+        redstone_fleece = new RedstoneFleece().setUnlocalizedName("redstone_fleece").setCreativeTab(Sheeps.tabSheeps);
+        lapis_fleece = new LapisFleece().setUnlocalizedName("lapis_fleece").setCreativeTab(Sheeps.tabSheeps);
 
         /* Fleece - Mod */
-        copper_fleece = new CopperFleece().setUnlocalizedName("copper_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        tin_fleece = new TinFleece().setUnlocalizedName("tin_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        nickel_fleece = new NickelFleece().setUnlocalizedName("nickel_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        lead_fleece = new LeadFleece().setUnlocalizedName("lead_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        silver_fleece = new SilverFleece().setUnlocalizedName("silver_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        platinum_fleece = new PlatinumFleece().setUnlocalizedName("platinum_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        ardite_fleece = new ArditeFleece().setUnlocalizedName("ardite_fleece").setCreativeTab(Sheeeps.tabSheeeps);
-        cobalt_fleece = new CobaltFleece().setUnlocalizedName("cobalt_fleece").setCreativeTab(Sheeeps.tabSheeeps);
+        copper_fleece = new CopperFleece().setUnlocalizedName("copper_fleece").setCreativeTab(Sheeps.tabSheeps);
+        tin_fleece = new TinFleece().setUnlocalizedName("tin_fleece").setCreativeTab(Sheeps.tabSheeps);
+        nickel_fleece = new NickelFleece().setUnlocalizedName("nickel_fleece").setCreativeTab(Sheeps.tabSheeps);
+        lead_fleece = new LeadFleece().setUnlocalizedName("lead_fleece").setCreativeTab(Sheeps.tabSheeps);
+        silver_fleece = new SilverFleece().setUnlocalizedName("silver_fleece").setCreativeTab(Sheeps.tabSheeps);
+        platinum_fleece = new PlatinumFleece().setUnlocalizedName("platinum_fleece").setCreativeTab(Sheeps.tabSheeps);
+        ardite_fleece = new ArditeFleece().setUnlocalizedName("ardite_fleece").setCreativeTab(Sheeps.tabSheeps);
+        cobalt_fleece = new CobaltFleece().setUnlocalizedName("cobalt_fleece").setCreativeTab(Sheeps.tabSheeps);
 
         /* Residue - Vanilla */
-        iron_residue = new IronResidue().setUnlocalizedName("iron_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        diamond_residue = new DiamondResidue().setUnlocalizedName("diamond_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        coal_residue = new CoalResidue().setUnlocalizedName("coal_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        emerald_residue = new EmeraldResidue().setUnlocalizedName("emerald_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        gold_residue = new GoldResidue().setUnlocalizedName("gold_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        glowstone_residue = new GlowstoneResidue().setUnlocalizedName("glowstone_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        redstone_residue = new RedstoneResidue().setUnlocalizedName("redstone_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        lapis_residue = new LapisResidue().setUnlocalizedName("lapis_residue").setCreativeTab(Sheeeps.tabSheeeps);
+        iron_residue = new IronResidue().setUnlocalizedName("iron_residue").setCreativeTab(Sheeps.tabSheeps);
+        diamond_residue = new DiamondResidue().setUnlocalizedName("diamond_residue").setCreativeTab(Sheeps.tabSheeps);
+        coal_residue = new CoalResidue().setUnlocalizedName("coal_residue").setCreativeTab(Sheeps.tabSheeps);
+        emerald_residue = new EmeraldResidue().setUnlocalizedName("emerald_residue").setCreativeTab(Sheeps.tabSheeps);
+        gold_residue = new GoldResidue().setUnlocalizedName("gold_residue").setCreativeTab(Sheeps.tabSheeps);
+        glowstone_residue = new GlowstoneResidue().setUnlocalizedName("glowstone_residue").setCreativeTab(Sheeps.tabSheeps);
+        redstone_residue = new RedstoneResidue().setUnlocalizedName("redstone_residue").setCreativeTab(Sheeps.tabSheeps);
+        lapis_residue = new LapisResidue().setUnlocalizedName("lapis_residue").setCreativeTab(Sheeps.tabSheeps);
 
         /* Residue - Mod */
-        copper_residue = new CopperResidue().setUnlocalizedName("copper_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        tin_residue = new TinResidue().setUnlocalizedName("tin_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        nickel_residue = new NickelResidue().setUnlocalizedName("nickel_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        lead_residue = new LeadResidue().setUnlocalizedName("lead_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        silver_residue = new SilverResidue().setUnlocalizedName("silver_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        platinum_residue = new PlatinumResidue().setUnlocalizedName("platinum_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        ardite_residue = new ArditeResidue().setUnlocalizedName("ardite_residue").setCreativeTab(Sheeeps.tabSheeeps);
-        cobalt_residue = new CobaltResidue().setUnlocalizedName("cobalt_residue").setCreativeTab(Sheeeps.tabSheeeps);
+        copper_residue = new CopperResidue().setUnlocalizedName("copper_residue").setCreativeTab(Sheeps.tabSheeps);
+        tin_residue = new TinResidue().setUnlocalizedName("tin_residue").setCreativeTab(Sheeps.tabSheeps);
+        nickel_residue = new NickelResidue().setUnlocalizedName("nickel_residue").setCreativeTab(Sheeps.tabSheeps);
+        lead_residue = new LeadResidue().setUnlocalizedName("lead_residue").setCreativeTab(Sheeps.tabSheeps);
+        silver_residue = new SilverResidue().setUnlocalizedName("silver_residue").setCreativeTab(Sheeps.tabSheeps);
+        platinum_residue = new PlatinumResidue().setUnlocalizedName("platinum_residue").setCreativeTab(Sheeps.tabSheeps);
+        ardite_residue = new ArditeResidue().setUnlocalizedName("ardite_residue").setCreativeTab(Sheeps.tabSheeps);
+        cobalt_residue = new CobaltResidue().setUnlocalizedName("cobalt_residue").setCreativeTab(Sheeps.tabSheeps);
 
         /* Spawn Eggs - Vanilla */
-        iron_spawn_egg = new IronSpawnEgg().setUnlocalizedName("iron_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        diamond_spawn_egg = new DiamondSpawnEgg().setUnlocalizedName("diamond_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        coal_spawn_egg = new CoalSpawnEgg().setUnlocalizedName("coal_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        emerald_spawn_egg = new EmeraldSpawnEgg().setUnlocalizedName("emerald_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        gold_spawn_egg = new GoldSpawnEgg().setUnlocalizedName("gold_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        glowstone_spawn_egg = new GlowstoneSpawnEgg().setUnlocalizedName("glowstone_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        redstone_spawn_egg = new RedstoneSpawnEgg().setUnlocalizedName("redstone_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        lapis_spawn_egg = new LapisSpawnEgg().setUnlocalizedName("lapis_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
+        iron_spawn_egg = new IronSpawnEgg().setUnlocalizedName("iron_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        diamond_spawn_egg = new DiamondSpawnEgg().setUnlocalizedName("diamond_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        coal_spawn_egg = new CoalSpawnEgg().setUnlocalizedName("coal_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        emerald_spawn_egg = new EmeraldSpawnEgg().setUnlocalizedName("emerald_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        gold_spawn_egg = new GoldSpawnEgg().setUnlocalizedName("gold_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        glowstone_spawn_egg = new GlowstoneSpawnEgg().setUnlocalizedName("glowstone_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        redstone_spawn_egg = new RedstoneSpawnEgg().setUnlocalizedName("redstone_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        lapis_spawn_egg = new LapisSpawnEgg().setUnlocalizedName("lapis_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
 
         /* Spawn Eggs - Mod */
-        copper_spawn_egg = new CopperSpawnEgg().setUnlocalizedName("copper_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        tin_spawn_egg = new TinSpawnEgg().setUnlocalizedName("tin_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        nickel_spawn_egg = new NickelSpawnEgg().setUnlocalizedName("nickel_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        lead_spawn_egg = new LeadSpawnEgg().setUnlocalizedName("lead_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        silver_spawn_egg = new SilverSpawnEgg().setUnlocalizedName("silver_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        platinum_spawn_egg = new PlatinumSpawnEgg().setUnlocalizedName("platinum_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        ardite_spawn_egg = new ArditeSpawnEgg().setUnlocalizedName("ardite_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
-        cobalt_spawn_egg = new CobaltSpawnEgg().setUnlocalizedName("cobalt_spawn_egg").setCreativeTab(Sheeeps.tabSheeeps);
+        copper_spawn_egg = new CopperSpawnEgg().setUnlocalizedName("copper_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        tin_spawn_egg = new TinSpawnEgg().setUnlocalizedName("tin_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        nickel_spawn_egg = new NickelSpawnEgg().setUnlocalizedName("nickel_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        lead_spawn_egg = new LeadSpawnEgg().setUnlocalizedName("lead_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        silver_spawn_egg = new SilverSpawnEgg().setUnlocalizedName("silver_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        platinum_spawn_egg = new PlatinumSpawnEgg().setUnlocalizedName("platinum_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        ardite_spawn_egg = new ArditeSpawnEgg().setUnlocalizedName("ardite_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
+        cobalt_spawn_egg = new CobaltSpawnEgg().setUnlocalizedName("cobalt_spawn_egg").setCreativeTab(Sheeps.tabSheeps);
     }
 
     public static void register(){

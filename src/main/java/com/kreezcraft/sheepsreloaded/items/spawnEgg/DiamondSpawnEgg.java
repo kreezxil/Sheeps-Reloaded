@@ -19,9 +19,9 @@ public class DiamondSpawnEgg extends BaseOreSpawnEgg {
     public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if(!worldIn.isRemote) {
-            EntityOreSheep entityToSpawn = (EntityOreSheep) EntityList.createEntityByName("sheeeps.OreSheeep", worldIn);
+            EntityOreSheep entityToSpawn = (EntityOreSheep) EntityList.createEntityByName("sheeps.OreSheep", worldIn);
             entityToSpawn.setPosition(pos.getX(), pos.getY() + 1, pos.getZ());
-            entityToSpawn.setSheeepType(6);
+            entityToSpawn.setSheepType(6);
             worldIn.spawnEntityInWorld(entityToSpawn);
             return true;
         }

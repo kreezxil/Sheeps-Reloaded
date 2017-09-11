@@ -8,7 +8,7 @@ import net.minecraft.inventory.Slot;
 /**
  * Created by Dan on 3/3/2016.
  */
-public class SheeepsContainerBase extends Container {
+public class SheepsContainerBase extends Container {
 
     protected void addPlayerSlots(InventoryPlayer playerInventory, int x, int y){
         for(int i = 0; i < 3; ++i){
