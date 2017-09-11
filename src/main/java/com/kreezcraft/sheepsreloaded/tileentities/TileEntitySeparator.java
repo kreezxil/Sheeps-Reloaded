@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.tileentities;
 
-import com.kreezcraft.sheepsreloaded.blocks.BaseOreWool;
+import com.kreezcraft.sheepsreloaded.blocks.OreWool;
 import com.kreezcraft.sheepsreloaded.blocks.Separator;
 import com.kreezcraft.sheepsreloaded.items.SeparatorRegistry;
 import com.kreezcraft.sheepsreloaded.utility.Names;
@@ -306,7 +306,7 @@ public class TileEntitySeparator extends SheepsTileEntityBase implements ITickab
                 }
                 break;
             case 1:
-                if(Block.getBlockFromItem(stack.getItem()) instanceof BaseOreWool) {
+                if(Block.getBlockFromItem(stack.getItem()) instanceof OreWool) {
                     return true;
                 }
                 break;

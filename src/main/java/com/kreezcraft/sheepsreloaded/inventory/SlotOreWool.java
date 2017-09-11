@@ -1,6 +1,6 @@
 package com.kreezcraft.sheepsreloaded.inventory;
 
-import com.kreezcraft.sheepsreloaded.blocks.BaseOreWool;
+import com.kreezcraft.sheepsreloaded.blocks.OreWool;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
@@ -16,6 +16,6 @@ public class SlotOreWool extends Slot {
 
     @Override
     public boolean isItemValid(ItemStack stack){
-        return Block.getBlockFromItem(stack.getItem()) instanceof BaseOreWool;
+        return Block.getBlockFromItem(stack.getItem()) instanceof OreWool;
     }
 }
