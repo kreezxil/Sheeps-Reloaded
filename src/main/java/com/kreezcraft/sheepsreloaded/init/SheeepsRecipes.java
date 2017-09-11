@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.init;
+package com.kreezcraft.sheepsreloaded.init;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

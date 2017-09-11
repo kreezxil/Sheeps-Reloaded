@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.items.spawnEgg;
+package com.kreezcraft.sheepsreloaded.items.spawnEgg;
 
-import com.zulucap.sheeeps.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

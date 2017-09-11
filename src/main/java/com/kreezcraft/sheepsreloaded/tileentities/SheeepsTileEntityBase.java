@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.tileentities;
+package com.kreezcraft.sheepsreloaded.tileentities;
 
-import com.zulucap.sheeeps.network.DescriptionHandler;
+import com.kreezcraft.sheepsreloaded.network.DescriptionHandler;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import net.minecraft.network.Packet;

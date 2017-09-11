@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.items.fleece;
+package com.kreezcraft.sheepsreloaded.items.fleece;
 
 import net.minecraft.item.Item;
 

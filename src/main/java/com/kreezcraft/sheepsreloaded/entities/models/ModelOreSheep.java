@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.entities.models;
+package com.kreezcraft.sheepsreloaded.entities.models;
 
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;

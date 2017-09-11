@@ -1,7 +1,7 @@
-package com.zulucap.sheeeps.entities.renderers;
+package com.kreezcraft.sheepsreloaded.entities.renderers;
 
-import com.zulucap.sheeeps.entities.EntityOreSheep;
-import com.zulucap.sheeeps.entities.layers.LayerOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.layers.LayerOreSheep;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;

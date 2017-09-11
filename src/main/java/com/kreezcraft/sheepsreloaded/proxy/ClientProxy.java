@@ -1,10 +1,10 @@
-package com.zulucap.sheeeps.proxy;
+package com.kreezcraft.sheepsreloaded.proxy;
 
-import com.zulucap.sheeeps.entities.EntityOreSheep;
-import com.zulucap.sheeeps.entities.models.ModelOreSheep;
-import com.zulucap.sheeeps.entities.renderers.RenderOreSheep;
-import com.zulucap.sheeeps.init.SheeepsBlocks;
-import com.zulucap.sheeeps.init.SheeepsItems;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.models.ModelOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.renderers.RenderOreSheep;
+import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheeepsItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.player.EntityPlayer;

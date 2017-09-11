@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.gui;
+package com.kreezcraft.sheepsreloaded.gui;
 
-import com.zulucap.sheeeps.Reference;
+import com.kreezcraft.sheepsreloaded.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;

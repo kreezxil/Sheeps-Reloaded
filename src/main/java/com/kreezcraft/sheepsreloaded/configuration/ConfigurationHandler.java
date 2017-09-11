@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.configuration;
+package com.kreezcraft.sheepsreloaded.configuration;
 
 import net.minecraftforge.common.config.Configuration;
 

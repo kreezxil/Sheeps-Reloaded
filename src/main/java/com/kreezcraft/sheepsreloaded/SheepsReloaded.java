@@ -1,21 +1,21 @@
-package com.zulucap.sheeeps;
+package com.kreezcraft.sheepsreloaded;
 
 /**
  * Created by Dan on 2/25/2016.
  */
 
-import com.zulucap.sheeeps.configuration.ConfigurationHandler;
-import com.zulucap.sheeeps.configuration.ConfigurationReference;
-import com.zulucap.sheeeps.entities.EntityOreSheep;
-import com.zulucap.sheeeps.events.EventHandlerCommon;
-import com.zulucap.sheeeps.gui.GuiHandler;
-import com.zulucap.sheeeps.gui.GuiHandlerRegistry;
-import com.zulucap.sheeeps.init.*;
-import com.zulucap.sheeeps.network.DescriptionHandler;
-import com.zulucap.sheeeps.network.NetworkHandler;
-import com.zulucap.sheeeps.proxy.CommonProxy;
+import com.kreezcraft.sheepsreloaded.configuration.ConfigurationHandler;
+import com.kreezcraft.sheepsreloaded.configuration.ConfigurationReference;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.events.EventHandlerCommon;
+import com.kreezcraft.sheepsreloaded.gui.GuiHandler;
+import com.kreezcraft.sheepsreloaded.gui.GuiHandlerRegistry;
+import com.kreezcraft.sheepsreloaded.init.*;
+import com.kreezcraft.sheepsreloaded.network.DescriptionHandler;
+import com.kreezcraft.sheepsreloaded.network.NetworkHandler;
+import com.kreezcraft.sheepsreloaded.proxy.CommonProxy;
 import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -29,9 +29,9 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION)
-public class Sheeeps {
+public class SheepsReloaded {
     @Instance
-    public static Sheeeps instance = new Sheeeps();
+    public static SheepsReloaded instance = new SheepsReloaded();
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
@@ -52,13 +52,14 @@ public class Sheeeps {
         SheeepsTileEntities.init();
 
         int modEntityID = 0;
-        EntityRegistry.registerModEntity(EntityOreSheep.class, "OreSheeep", ++modEntityID , Sheeeps.instance, 80, 3, false);
+        EntityRegistry.registerModEntity(registryName, entityClass, entityName, id, mod, trackingRange, updateFrequency, sendsVelocityUpdates, eggPrimary, eggSecondary);
+        EntityRegistry.registerModEntity(new ResourceLocation(null), EntityOreSheep.class, "OreSheeep", ++modEntityID , SheepsReloaded.instance, 80, 3, false);
 
         proxy.preInit();
 
         NetworkHandler.init();
         DescriptionHandler.init();
-        NetworkRegistry.INSTANCE.registerGuiHandler(Sheeeps.instance, GuiHandlerRegistry.getInstance());
+        NetworkRegistry.INSTANCE.registerGuiHandler(SheepsReloaded.instance, GuiHandlerRegistry.getInstance());
         GuiHandlerRegistry.getInstance().registerGuiHandler(new GuiHandler(), GuiHandler.GuiIDs.SEPARATOR.ordinal());
     }
 

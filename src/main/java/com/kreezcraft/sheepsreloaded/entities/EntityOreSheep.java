@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.entities;
+package com.kreezcraft.sheepsreloaded.entities;
 
-import com.zulucap.sheeeps.init.SheeepsEntities;
+import com.kreezcraft.sheepsreloaded.init.SheeepsEntities;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.item.EntityItem;

@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps;
+package com.kreezcraft.sheepsreloaded;
 
-import com.zulucap.sheeeps.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

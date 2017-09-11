@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.inventory;
+package com.kreezcraft.sheepsreloaded.inventory;
 
-import com.zulucap.sheeeps.tileentities.TileEntitySeparator;
+import com.kreezcraft.sheepsreloaded.tileentities.TileEntitySeparator;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ICrafting;

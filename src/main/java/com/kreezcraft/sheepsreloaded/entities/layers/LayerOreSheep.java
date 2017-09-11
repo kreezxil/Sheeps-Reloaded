@@ -1,8 +1,8 @@
-package com.zulucap.sheeeps.entities.layers;
+package com.kreezcraft.sheepsreloaded.entities.layers;
 
-import com.zulucap.sheeeps.entities.EntityOreSheep;
-import com.zulucap.sheeeps.entities.models.ModelOreSheepFur;
-import com.zulucap.sheeeps.entities.renderers.RenderOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.models.ModelOreSheepFur;
+import com.kreezcraft.sheepsreloaded.entities.renderers.RenderOreSheep;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.layers.LayerRenderer;
 import net.minecraft.entity.passive.EntitySheep;

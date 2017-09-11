@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.utility;
+package com.kreezcraft.sheepsreloaded.utility;
 
-import com.zulucap.sheeeps.Reference;
+import com.kreezcraft.sheepsreloaded.Reference;
 
 /**
  * Created by Dan on 3/3/2016.

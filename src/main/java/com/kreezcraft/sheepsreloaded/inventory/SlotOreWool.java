@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.inventory;
+package com.kreezcraft.sheepsreloaded.inventory;
 
-import com.zulucap.sheeeps.blocks.BaseOreWool;
+import com.kreezcraft.sheepsreloaded.blocks.BaseOreWool;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;

@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.inventory;
+package com.kreezcraft.sheepsreloaded.inventory;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.entities;
+package com.kreezcraft.sheepsreloaded.entities;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

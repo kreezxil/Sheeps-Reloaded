@@ -1,7 +1,7 @@
-package com.zulucap.sheeeps.init;
+package com.kreezcraft.sheepsreloaded.init;
 
-import com.zulucap.sheeeps.tileentities.TileEntitySeparator;
-import com.zulucap.sheeeps.utility.Names;
+import com.kreezcraft.sheepsreloaded.tileentities.TileEntitySeparator;
+import com.kreezcraft.sheepsreloaded.utility.Names;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**

@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.proxy;
+package com.kreezcraft.sheepsreloaded.proxy;
 
 import net.minecraft.entity.player.EntityPlayer;
 

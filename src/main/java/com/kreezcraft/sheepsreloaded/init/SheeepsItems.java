@@ -1,10 +1,10 @@
-package com.zulucap.sheeeps.init;
+package com.kreezcraft.sheepsreloaded.init;
 
-import com.zulucap.sheeeps.Sheeeps;
-import com.zulucap.sheeeps.Reference;
-import com.zulucap.sheeeps.items.fleece.*;
-import com.zulucap.sheeeps.items.residue.*;
-import com.zulucap.sheeeps.items.spawnEgg.*;
+import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Reference;
+import com.kreezcraft.sheepsreloaded.items.fleece.*;
+import com.kreezcraft.sheepsreloaded.items.residue.*;
+import com.kreezcraft.sheepsreloaded.items.spawnEgg.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;

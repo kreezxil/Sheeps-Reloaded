@@ -1,9 +1,9 @@
-package com.zulucap.sheeeps.init;
+package com.kreezcraft.sheepsreloaded.init;
 
-import com.zulucap.sheeeps.Reference;
-import com.zulucap.sheeeps.configuration.ConfigurationReference;
-import com.zulucap.sheeeps.configuration.SheepConfig;
-import com.zulucap.sheeeps.entities.SheeepsEntity;
+import com.kreezcraft.sheepsreloaded.Reference;
+import com.kreezcraft.sheepsreloaded.configuration.ConfigurationReference;
+import com.kreezcraft.sheepsreloaded.configuration.SheepConfig;
+import com.kreezcraft.sheepsreloaded.entities.SheeepsEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ResourceLocation;

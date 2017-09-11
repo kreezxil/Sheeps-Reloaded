@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.network;
+package com.kreezcraft.sheepsreloaded.network;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.tileentity.TileEntity;

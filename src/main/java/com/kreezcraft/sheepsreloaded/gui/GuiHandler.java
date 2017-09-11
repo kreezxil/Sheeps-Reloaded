@@ -1,7 +1,7 @@
-package com.zulucap.sheeeps.gui;
+package com.kreezcraft.sheepsreloaded.gui;
 
-import com.zulucap.sheeeps.inventory.ContainerSeparator;
-import com.zulucap.sheeeps.tileentities.TileEntitySeparator;
+import com.kreezcraft.sheepsreloaded.inventory.ContainerSeparator;
+import com.kreezcraft.sheepsreloaded.tileentities.TileEntitySeparator;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;

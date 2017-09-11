@@ -1,8 +1,8 @@
-package com.zulucap.sheeeps.blocks;
+package com.kreezcraft.sheepsreloaded.blocks;
 
-import com.zulucap.sheeeps.init.SheeepsBlocks;
-import com.zulucap.sheeeps.items.fleece.BaseOreFleece;
-import com.zulucap.sheeeps.items.WasherRegistry;
+import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.items.fleece.BaseOreFleece;
+import com.kreezcraft.sheepsreloaded.items.WasherRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;

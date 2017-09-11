@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.network;
+package com.kreezcraft.sheepsreloaded.network;
 
-import com.zulucap.sheeeps.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Sheeeps;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;

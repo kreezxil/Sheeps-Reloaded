@@ -1,8 +1,8 @@
-package com.zulucap.sheeeps.items;
+package com.kreezcraft.sheepsreloaded.items;
 
 import com.google.common.collect.Maps;
-import com.zulucap.sheeeps.init.SheeepsBlocks;
-import com.zulucap.sheeeps.init.SheeepsItems;
+import com.kreezcraft.sheepsreloaded.init.SheeepsBlocks;
+import com.kreezcraft.sheepsreloaded.init.SheeepsItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;

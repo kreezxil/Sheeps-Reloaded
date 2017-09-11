@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.blocks;
+package com.kreezcraft.sheepsreloaded.blocks;
 
 import net.minecraft.block.material.Material;
 

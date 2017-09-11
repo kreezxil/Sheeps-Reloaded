@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.inventory;
+package com.kreezcraft.sheepsreloaded.inventory;
 
-import com.zulucap.sheeeps.tileentities.TileEntitySeparator;
+import com.kreezcraft.sheepsreloaded.tileentities.TileEntitySeparator;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

@@ -1,8 +1,8 @@
-package com.zulucap.sheeeps.network;
+package com.kreezcraft.sheepsreloaded.network;
 
-import com.zulucap.sheeeps.Reference;
-import com.zulucap.sheeeps.Sheeeps;
-import com.zulucap.sheeeps.tileentities.SheeepsTileEntityBase;
+import com.kreezcraft.sheepsreloaded.Reference;
+import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.tileentities.SheeepsTileEntityBase;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

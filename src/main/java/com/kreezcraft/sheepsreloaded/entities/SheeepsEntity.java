@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.entities;
+package com.kreezcraft.sheepsreloaded.entities;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;

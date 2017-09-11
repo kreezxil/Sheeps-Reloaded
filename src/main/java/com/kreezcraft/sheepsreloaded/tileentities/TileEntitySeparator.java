@@ -1,9 +1,9 @@
-package com.zulucap.sheeeps.tileentities;
+package com.kreezcraft.sheepsreloaded.tileentities;
 
-import com.zulucap.sheeeps.blocks.BaseOreWool;
-import com.zulucap.sheeeps.blocks.Separator;
-import com.zulucap.sheeeps.items.SeparatorRegistry;
-import com.zulucap.sheeeps.utility.Names;
+import com.kreezcraft.sheepsreloaded.blocks.BaseOreWool;
+import com.kreezcraft.sheepsreloaded.blocks.Separator;
+import com.kreezcraft.sheepsreloaded.items.SeparatorRegistry;
+import com.kreezcraft.sheepsreloaded.utility.Names;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;

@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.network;
+package com.kreezcraft.sheepsreloaded.network;
 
-import com.zulucap.sheeeps.Reference;
+import com.kreezcraft.sheepsreloaded.Reference;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.NetworkRegistry;

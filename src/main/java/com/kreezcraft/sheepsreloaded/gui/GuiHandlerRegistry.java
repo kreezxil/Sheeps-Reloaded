@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.gui;
+package com.kreezcraft.sheepsreloaded.gui;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

@@ -1,6 +1,6 @@
-package com.zulucap.sheeeps.entities.models;
+package com.kreezcraft.sheepsreloaded.entities.models;
 
-import com.zulucap.sheeeps.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.renderer.GlStateManager;

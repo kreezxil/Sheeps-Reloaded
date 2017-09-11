@@ -1,4 +1,4 @@
-package com.zulucap.sheeeps.configuration;
+package com.kreezcraft.sheepsreloaded.configuration;
 
 /**
  * Created by Dan on 3/10/2016.

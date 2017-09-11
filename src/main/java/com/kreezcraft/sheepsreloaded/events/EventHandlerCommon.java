@@ -1,7 +1,7 @@
-package com.zulucap.sheeeps.events;
+package com.kreezcraft.sheepsreloaded.events;
 
-import com.zulucap.sheeeps.configuration.ConfigurationReference;
-import com.zulucap.sheeeps.entities.EntityOreSheep;
+import com.kreezcraft.sheepsreloaded.configuration.ConfigurationReference;
+import com.kreezcraft.sheepsreloaded.entities.EntityOreSheep;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraftforge.event.entity.living.LivingSpawnEvent;

@@ -1,8 +1,8 @@
-package com.zulucap.sheeeps.init;
+package com.kreezcraft.sheepsreloaded.init;
 
-import com.zulucap.sheeeps.Sheeeps;
-import com.zulucap.sheeeps.Reference;
-import com.zulucap.sheeeps.blocks.*;
+import com.kreezcraft.sheepsreloaded.Sheeeps;
+import com.kreezcraft.sheepsreloaded.Reference;
+import com.kreezcraft.sheepsreloaded.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
