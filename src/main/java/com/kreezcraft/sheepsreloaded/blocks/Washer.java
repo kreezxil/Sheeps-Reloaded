@@ -4,11 +4,12 @@ import com.kreezcraft.sheepsreloaded.init.SheepsBlocks;
 import com.kreezcraft.sheepsreloaded.items.fleece.BaseOreFleece;
 import com.kreezcraft.sheepsreloaded.items.WasherRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
-import net.minecraft.block.state.BlockState;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -17,10 +18,10 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.MathHelper;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -37,13 +38,13 @@ public class Washer extends Block /*extends BlockContainer*/ {
 
     public Washer(Material materialIn) {
 
-        super(materialIn, MapColor.woodColor);
+        super(materialIn, MapColor.WOOD);
 
-        this.setDefaultState(this.blockState.getBaseState().withProperty(LEVEL, Integer.valueOf(0)));
-        this.setHardness(3.5F);
-        this.setResistance(3.5F);
-        this.setStepSound(soundTypeWood);
-        this.setHarvestLevel("axe",0);
+        setDefaultState(this.blockState.getBaseState().withProperty(LEVEL, Integer.valueOf(0)));
+        setHardness(3.5F);
+        setResistance(3.5F);
+        setSoundType(SoundType.WOOD);
+        setHarvestLevel("axe",0);
     }
 
     /**
@@ -105,16 +106,15 @@ public class Washer extends Block /*extends BlockContainer*/ {
                 int i = ((Integer)state.getValue(LEVEL)).intValue();
                 Item item = itemstack.getItem();
 
-                if (item == Items.water_bucket)
+                if (item == Items.WATER_BUCKET)
                 {
                     if (i < 3)
                     {
                         if (!playerIn.capabilities.isCreativeMode)
                         {
-                            playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, new ItemStack(Items.bucket));
+                            playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, new ItemStack(Items.BUCKET));
                         }
-
-                        playerIn.triggerAchievement(StatList.field_181725_I);
+//                        playerIn.triggerAchievement(StatList.CAULDRON_FILLED);
                         this.setWaterLevel(worldIn, pos, state, 3);
                     }
 
@@ -126,16 +126,17 @@ public class Washer extends Block /*extends BlockContainer*/ {
                         float spawnZ = pos.getZ();
 
                         ItemStack droppedItemStack = WasherRegistry.instance().getWashingResult(new ItemStack(item));
-                        droppedItemStack.stackSize = 1;
+                        droppedItemStack.splitStack(1); //previousl was .setStackSize = 1
                         EntityItem droppedItem = new EntityItem(worldIn,spawnX,spawnY,spawnZ, droppedItemStack);
 
                         float mult = 0.05F;
                         droppedItem.motionX = (-0.5F + worldIn.rand.nextFloat()) * mult;
                         droppedItem.motionX = (4 + worldIn.rand.nextFloat()) * mult;
                         droppedItem.motionX = (-0.5F + worldIn.rand.nextFloat()) * mult;
-
-                        playerIn.inventory.consumeInventoryItem(playerIn.getHeldItem().getItem());
-                        worldIn.spawnEntityInWorld(droppedItem);
+                        
+                        playerIn.getHeldItemMainhand().setCount(playerIn.getHeldItemMainhand().getCount()-1);
+  //                      playerIn.inventory.consumeInventoryItem(playerIn.getHeldItem(null).getItem());
+                        worldIn.spawnEntity(droppedItem);
                         setWaterLevel(worldIn, pos, state, 0);
                     }
                 }
@@ -147,7 +148,7 @@ public class Washer extends Block /*extends BlockContainer*/ {
 
     public void setWaterLevel(World worldIn, BlockPos pos, IBlockState state, int level)
     {
-        worldIn.setBlockState(pos, state.withProperty(LEVEL, Integer.valueOf(MathHelper.clamp_int(level, 0, 3))), 2);
+        worldIn.setBlockState(pos, state.withProperty(LEVEL, Integer.valueOf(MathHelper.clamp(level, 0, 3))), 2);
         worldIn.updateComparatorOutputLevel(pos, this);
     }
 
@@ -197,9 +198,9 @@ public class Washer extends Block /*extends BlockContainer*/ {
         return ((Integer)state.getValue(LEVEL)).intValue();
     }
 
-    protected BlockState createBlockState()
+    protected BlockStateContainer createBlockState()
     {
-        return new BlockState(this, new IProperty[] {LEVEL});
+        return new BlockStateContainer(this, new IProperty[] {LEVEL});
     }
 
     /*
